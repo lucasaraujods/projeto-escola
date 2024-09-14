@@ -29,8 +29,8 @@ function CadastrarAluno(nome,idade,nota) {
     }
 }
 
-function OrdenarPorNota() {
- 
+function OrdenarPorNota(arrayAlunos) {
+    return arrayAlunos.sort((a, b) => a.Nota - b.Nota);
 }
 
 function OrdenarPorIdade() {
