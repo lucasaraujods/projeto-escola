@@ -3,10 +3,15 @@
 ////////////////////////////////////////////////////////////////////////
 
 class Aluno {
-  
+   constructor(nome, idade, nota) {
+        this.Nome = nome;
+        this.Idade = idade;
+        this.Nota = nota;
+    }
 }
 
 // Array
+let arrayAlunos = [];
 
 
 //funções projeto
