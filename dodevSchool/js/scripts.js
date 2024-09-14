@@ -53,8 +53,18 @@ function OrdenarPorNome() {
     });
 }
 
-function CalcularMedia(){
+function CalcularMedia(arrayAlunos){
+   
+   if (arrayAlunos.length === 0) {
+        return 0; // retorna 0 se o array estiver vazio
+    }
 
+    let somaNotas = 0;
+    arrayAlunos.forEach(aluno => {
+        somaNotas += Number(aluno.Nota);
+    });
+
+    return somaNotas / arrayAlunos.length;
 }
 
 ////////////////////////////////////////////////////////////////////////
