@@ -33,8 +33,8 @@ function OrdenarPorNota(arrayAlunos) {
     return arrayAlunos.sort((a, b) => a.Nota - b.Nota);
 }
 
-function OrdenarPorIdade() {
-
+function OrdenarPorIdade(arrayAlunos) {
+   return arrayAlunos.sort((a, b) => b.Idade - a.Idade);
 }
 
 function OrdenarPorNome() {
