@@ -16,8 +16,17 @@ let arrayAlunos = [];
 
 //funções projeto
 
-function CadastrarAluno() {
-  
+function CadastrarAluno(nome,idade,nota) {
+   
+    let objetoAluno = new Aluno(nome, idade, nota);
+    let alunoComMesmoNome = arrayAlunos.some(aluno => aluno.Nome === nome);
+
+    if (alunoComMesmoNome) {
+        console.log("O aluno: " + nome + " já está cadastrado.");
+    } else {
+        arrayAlunos.push(objetoAluno);
+        console.log("Aluno " + nome + " cadastrado com sucesso.");
+    }
 }
 
 function OrdenarPorNota() {
