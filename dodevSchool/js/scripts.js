@@ -38,7 +38,19 @@ function OrdenarPorIdade(arrayAlunos) {
 }
 
 function OrdenarPorNome() {
+   
+   return arrayAlunos.sort((a, b) => {
+      const nomeA = a.Nome.toUpperCase();
+      const nomeB = b.Nome.toUpperCase();
 
+        if (nomeA < nomeB) {
+            return -1;
+        }
+        if (nomeA > nomeB) {
+            return 1;
+        }
+        return 0;
+    });
 }
 
 function CalcularMedia(){
